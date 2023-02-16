@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &7732371099761644826
+--- !u!1 &4701772558393035810
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,41 +8,41 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8040735537231601305}
-  - component: {fileID: 4456695129202680429}
+  - component: {fileID: 4701772558393035808}
+  - component: {fileID: -1217658858511449484}
   m_Layer: 0
-  m_Name: LRBTNode
+  m_Name: SpawnCaveBasic
   m_TagString: Untagged
-  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8040735537231601305
+--- !u!4 &4701772558393035808
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732371099761644826}
+  m_GameObject: {fileID: 4701772558393035810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.0160449, y: -0.60112756, z: -4.817796}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4456695129202680429
+--- !u!114 &-1217658858511449484
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7732371099761644826}
+  m_GameObject: {fileID: 4701772558393035810}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a85281ec26543f4ebbd3982f3a965b3, type: 3}
+  m_Script: {fileID: 11500000, guid: 415c2bc59beb2cb45a58e776897589f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rooms:
-  - {fileID: 1354404844433801889, guid: 9fe971a3caff3554ab2604d46c53402a, type: 3}
+  tileSpawns:
+  - {fileID: 7539251580170753659, guid: 14c95639cc7e56048bc0ad2b793b66df, type: 3}

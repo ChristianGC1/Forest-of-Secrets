@@ -16,7 +16,8 @@ public class Generation : MonoBehaviour
     public List<Vector2> loadedRooms;
     public int delayTime;
 
-    public bool firstStageDone = false;
+    public static bool firstStageDone = false;
+    public static bool readyForPlayer = false;
     int direction; //0 & 1 = Right, 2 & 3 = Left, 4 = down
     int delay = 0;
 
@@ -24,8 +25,10 @@ public class Generation : MonoBehaviour
 
     void Start()
     {
+        firstStageDone = false;
+        readyForPlayer= false;
         roomArray = new GameObject[length, height];
-        Random.InitState(seed);
+        //Random.InitState(seed);
         transform.position = new Vector2(Random.Range(0, length), 0);
         CreateRoom(startingRooms[0]);
         if (transform.position.x == 0)
@@ -110,6 +113,7 @@ public class Generation : MonoBehaviour
                     CreateRoom(endingRooms[0]);
                     FillMap();
                     firstStageDone = true;
+                    readyForPlayer= true;
                 }
             }
         }
@@ -145,5 +149,10 @@ public class Generation : MonoBehaviour
     GameObject GetRoom(Vector2 pos)
     {
         return roomArray[(int)pos.x, -(int)pos.y];
+    }
+
+    public static void NextLevel()
+    {
+        PlayerData.level++;
     }
 }
